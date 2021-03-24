@@ -9,9 +9,11 @@ import {Course} from './model/course';
 })
 export class AppComponent {
 
-  coreCourse = COURSES[0];
+  courses = COURSES;
+
+  /*coreCourse = COURSES[0];
   RxJsCourse = COURSES[1];
-  NgRxCourse = COURSES[2];
+  NgRxCourse = COURSES[2];*/
 
   onCourseSelected(course: Course) {
     console.log('onCardClicked', course);
