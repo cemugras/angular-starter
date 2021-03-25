@@ -34,4 +34,17 @@ export class CourseCardComponent implements OnInit {
     this.courseEmitter.emit(this.course);
   }
 
+  cardClasses() {
+    // tslint:disable-next-line:triple-equals
+    if (this.course.category == 'BEGINNER'){
+      return ['beginner'];
+    }
+  }
+
+  cardStyles() {
+    return {
+      'background-image': 'url(' + this.course.iconUrl + ')',
+    };
+  }
+
 }
